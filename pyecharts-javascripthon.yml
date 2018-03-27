@@ -1,0 +1,12 @@
+name: "pyecharts-javascripthon"
+organisation: "pyecharts"
+author: "C.W."
+contact: "wangc_2011@hotmail.com"
+company: "pyecharts dev team"
+version: "0.0.1"
+current_version: "0.0.1"
+release: "0.0.0"
+copyright_year: 2018
+license: MIT
+dependencies: []
+description: "Embeded Python functions in pyecharts"
