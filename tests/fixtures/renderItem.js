@@ -5,5 +5,3 @@ function renderItem(params, api) {
     size = api.size([1, 1], values);
     return {"type": "sector", "shape": {"cx": params["coordSys"]["cx"], "startAngle": (coord[3] - (size[1] / 2))}};
 }
-
-//# sourceMappingURL=tmp.js.map
