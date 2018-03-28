@@ -8,5 +8,6 @@ current_version: "0.0.1"
 release: "0.0.0"
 copyright_year: 2018
 license: MIT
-dependencies: []
+dependencies:
+  - javascripthon>=0.8
 description: "Embeded Python functions in pyecharts"
