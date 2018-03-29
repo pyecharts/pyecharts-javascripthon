@@ -3,3 +3,4 @@ mock
 codecov
 coverage
 flake8
+https://github.com/pyecharts/pyecharts/archive/add-python-functions-in-echarts-options.zip

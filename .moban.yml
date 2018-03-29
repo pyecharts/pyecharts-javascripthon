@@ -12,4 +12,4 @@ targets:
   - test.sh: test.script.jj2
   - "pyecharts_javascripthon/_version.py": "_version.py.jj2"
   - .gitignore: gitignore.jj2
-  - .travis.yml: travis.yml.jj2
+  - .travis.yml: custom_travis.yml
