@@ -37,10 +37,10 @@ CLASSIFIERS = [
 ]
 
 INSTALL_REQUIRES = [
-    'javascripthon>=0.8',
+    'javascripthon>=0.8 ; python_version > '3.4'',
+    'requests ; python_version < '3.5'',
 ]
 SETUP_COMMANDS = {}
-
 
 PACKAGES = find_packages(exclude=['ez_setup', 'examples', 'tests'])
 EXTRAS_REQUIRE = {
