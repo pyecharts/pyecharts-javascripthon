@@ -1,5 +1,5 @@
 {% extends "tests/requirements.txt.jj2" %}
 
 {%block extras %}
-https://github.com/pyecharts/pyecharts/archive/add-python-functions-in-echarts-options.zip
+https://github.com/pyecharts/pyecharts/archive/split-translator.zip
 {%endblock%}
