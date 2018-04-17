@@ -8,7 +8,7 @@ PY35_ABOVE = sys.version_info[:2] >= (3, 5)
 if PY35_ABOVE:
     from pyecharts_javascripthon.compiler import Python2Javascript
 else:
-    from pyecharts_javascripthon.complier_client import Python2Javascript
+    from pyecharts_javascripthon.client import Python2Javascript
 
 # Dummy functions to make python compiler blind
 def Date(*_):
