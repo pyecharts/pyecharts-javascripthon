@@ -14,6 +14,7 @@ before_install:
     fi
   - test ! -f rnd_requirements.txt || pip install --no-deps -r rnd_requirements.txt
   - test ! -f rnd_requirements.txt || pip install -r rnd_requirements.txt ;
+  - python setup.py install
   - pip install -r tests/requirements.txt
 script:
   - make test
