@@ -1,6 +1,6 @@
 import os
 from nose.tools import eq_
-from pyecharts_javascripthon import Python2Javascript
+from pyecharts_javascripthon.compat import Python2Javascript
 
 
 def renderItem(params, api):

@@ -3,7 +3,7 @@ import inspect
 import requests
 
 
-DEFAULT_HOST = 'http://47.254.135.164/translate'
+DEFAULT_HOST = 'http://47.254.144.94/translate'
 DEFAULT_API_KEY = 'pyecharts-0-5-0-rocks'
 
 
