@@ -62,7 +62,7 @@ for unix alike systems:
 
 .. code-block:: shell
 
-   export SCRIPTHON_HOST=new_ip_addres_or_domain_name
+   export SCRIPTHON_HOST=new_ip_address_or_domain_name
    export SCRIPTION_API_TOKEN=new_api_key
 
 
@@ -70,7 +70,7 @@ for windows systems:
 
 .. code-block:: shell
 
-   set SCRIPTHON_HOST=new_ip_addres_or_domain_name
+   set SCRIPTHON_HOST=new_ip_address_or_domain_name
    set SCRIPTION_API_TOKEN=new_api_key
 
 
@@ -85,7 +85,7 @@ Usage
 1. Only Python 3.5+ code can be transcompiled. If you use python 2.7 or 3.4, you are obliged
 to use generic Python codes so that python 2.7 and 3.4 interpreter do not complain.
 
-2. For browsers DOM object, please do these imports so as to 'blind' python interpreter:
+2. For browsers DOM object, please include some of these statements so as to 'blind' python interpreter:
 
 
 .. code-block:: python
@@ -99,6 +99,7 @@ Credits
 =============
 
 javascripthon: `Alberto Berti <https://github.com/azazel75>`_
+
 Dukpy: `Alessandro Molina <https://github.com/amol->`_ and `Sviatoslav Sydorenko <https://github.com/webknjaz`
 
 
