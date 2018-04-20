@@ -2,6 +2,7 @@ from pyecharts_javascripthon.api import TRANSLATOR
 
 
 def test_basic_usage():
+
     def my_fmt(x):
         return x + 5
 

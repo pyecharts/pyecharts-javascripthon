@@ -10,8 +10,14 @@ def test_bar():
     attr = ["Jan", "Feb"]
     v1 = [2.0, 4.9]
     bar = Bar("Bar chart", "precipitation and evaporation one year")
-    bar.add("precipitation", attr, v1, mark_line=["average"],
-            mark_point=["max", "min"], label_formatter=formatter)
+    bar.add(
+        "precipitation",
+        attr,
+        v1,
+        mark_line=["average"],
+        mark_point=["max", "min"],
+        label_formatter=formatter,
+    )
     bar.render()
     content = get_default_rendering_file_content()
     assert 'function formatter(obj)' in content

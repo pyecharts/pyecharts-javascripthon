@@ -40,6 +40,7 @@ class FunctionSnippet(object):
 
 
 class JavascriptSnippet(object):
+
     def __init__(self, function_snippet, option_snippet):
         self.function_snippet = function_snippet
         self.option_snippet = option_snippet
@@ -53,11 +54,9 @@ class FunctionTranslator(object):
     def __init__(self):
         self.left_delimiter = '-=>'
         self.right_delimiter = '<=-'
-        self.reference_str_format = ''.join([
-            self.left_delimiter,
-            '{name}',
-            self.right_delimiter
-        ])
+        self.reference_str_format = ''.join(
+            [self.left_delimiter, '{name}', self.right_delimiter]
+        )
         self._shared_function_snippet = FunctionSnippet()
 
         # Tmp Data for a render process
@@ -96,12 +95,14 @@ _FUNCTION_TRANSLATOR = FunctionTranslator()
 
 
 class DefaultJsonEncoder(json.JSONEncoder):
+
     def default(self, obj):
         if isinstance(obj, types.FunctionType):
             return _FUNCTION_TRANSLATOR.feed(obj)
 
         if isinstance(obj, (datetime.datetime, datetime.date)):
             return obj.isoformat()
+
         # Pandas and Numpy lists
         try:
             return obj.astype(float).tolist()

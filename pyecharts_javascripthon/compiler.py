@@ -4,6 +4,7 @@ from metapensiero.pj.api import translates
 
 
 class Python2Javascript:
+
     @staticmethod
     def translate(obj):
         source_lines, _ = inspect.getsourcelines(obj)

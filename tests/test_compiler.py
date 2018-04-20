@@ -11,9 +11,9 @@ def renderItem(params, api):
         "type": 'sector',
         "shape": {
             "cx": params['coordSys']['cx'],
-            "startAngle": coord[3] - size[1] / 2
-            }
-        }
+            "startAngle": coord[3] - size[1] / 2,
+        },
+    }
 
 
 def test_translation():

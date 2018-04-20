@@ -1,4 +1,6 @@
 # Dummy functions to make python compiler blind
+
+
 def Date(*_):
     pass
 

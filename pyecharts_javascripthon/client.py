@@ -12,6 +12,7 @@ DEFAULT_API_ENDPOINT = 'http://{0}/translate'
 
 
 class Python2Javascript:
+
     @staticmethod
     def translate(obj):
         source_lines, _ = inspect.getsourcelines(obj)
@@ -19,16 +20,17 @@ class Python2Javascript:
         host = DEFAULT_API_ENDPOINT.format(host_name)
         api_token = get_api_token()
         headers = {
-            "Content-Type": "application/json",
-            "Authorization": api_token
+            "Content-Type": "application/json", "Authorization": api_token
         }
         r = requests.post(
             host,
             headers=headers,
-            data=json.dumps({"source": ''.join(source_lines)}))
+            data=json.dumps({"source": ''.join(source_lines)}),
+        )
         if r.status_code == 200:
             content = r.json()
             return content['response']
+
         else:
             raise IOError("Cannot connect to the online compiler")
 
