@@ -34,14 +34,14 @@ class Python2Javascript:
 
 
 def get_host_name():
-    host = os.environment.get(ENV_KEY_HOST)
+    host = os.environ.get(ENV_KEY_HOST)
     if host is None:
         host = DEFAULT_HOST
     return host
 
 
 def get_api_token():
-    api_token = os.environment.get(ENV_KEY_API_TOKEN)
+    api_token = os.environ.get(ENV_KEY_API_TOKEN)
     if api_token is None:
         api_token = DEFAULT_API_KEY
     return api_token
