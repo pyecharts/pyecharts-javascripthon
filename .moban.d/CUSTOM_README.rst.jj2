@@ -12,7 +12,7 @@ on Linux, MacOS and Windows platforms.
 
 Sample python function:
 
-.. code-block: python
+.. code-block:: python
 
    def renderItem(params, api):
        values = [api.value(0), api.value(1)]
@@ -29,7 +29,7 @@ Sample python function:
 
 Compiled python functions:
 
-.. code-block: javascript
+.. code-block:: javascript
 
    function renderItem(params, api) {
        var coord, size, values;
@@ -51,7 +51,7 @@ to change. When it does happen please declare these environment variables to con
 
 for unix alike systems:
 
-.. code-block: shell
+.. code-block:: shell
 
    export SCRIPTHON_HOST=new_ip_addres_or_domain_name
    export SCRIPTION_API_TOKEN=new_api_key
@@ -59,7 +59,7 @@ for unix alike systems:
 
 for windows systems:
 
-.. code-block: shell
+.. code-block:: shell
 
    set SCRIPTHON_HOST=new_ip_addres_or_domain_name
    set SCRIPTION_API_TOKEN=new_api_key
@@ -79,7 +79,7 @@ to use generic Python codes so that python 2.7 and 3.4 interpreter do not compla
 2. For browsers DOM object, please do these imports so as to 'blind' python interpreter:
 
 
-.. code-block: python
+.. code-block:: python
 
    from pyecharts_javascripthon.datatypes import window    # for window object
    from pyecharts_javascripthon.datatypes import Document  # for Document object
