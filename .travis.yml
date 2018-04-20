@@ -8,13 +8,13 @@ python:
   - 3.4
   - 2.7
 before_install:
+  - python setup.py install
   - if [[ $TRAVIS_PYTHON_VERSION == "2.6" ]]; then pip install flake8==2.6.2; fi
   - if [[ -f min_requirements.txt && "$MINREQ" -eq 1 ]]; then
       mv min_requirements.txt requirements.txt ;
     fi
   - test ! -f rnd_requirements.txt || pip install --no-deps -r rnd_requirements.txt
   - test ! -f rnd_requirements.txt || pip install -r rnd_requirements.txt ;
-  - python setup.py install
   - pip install -r tests/requirements.txt
 script:
   - make test

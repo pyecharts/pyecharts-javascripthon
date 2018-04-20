@@ -37,8 +37,8 @@ CLASSIFIERS = [
 ]
 
 INSTALL_REQUIRES = [
-    "javascripthon>=0.8 ; python_version > '3.4'",
-    "requests ; python_version < '3.5'"
+    'javascripthon>=0.9 ; python_version > '3.4'',
+    'requests ; python_version < '3.5'',
 ]
 SETUP_COMMANDS = {}
 
