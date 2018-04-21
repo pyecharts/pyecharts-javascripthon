@@ -16,8 +16,8 @@ master_doc = 'index'
 
 project = u'pyecharts-javascripthon'
 copyright = u'2018 pyecharts dev team'
-version = '0.0.0'
-release = '0.0.1'
+version = '0.0.1'
+release = '0.0.2'
 exclude_patterns = []
 pygments_style = 'sphinx'
 html_theme = 'default'

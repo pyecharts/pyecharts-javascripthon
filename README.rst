@@ -90,9 +90,9 @@ to use generic Python codes so that python 2.7 and 3.4 interpreter do not compla
 
 .. code-block:: python
 
-   from pyecharts_javascripthon.datatypes import window    # for window object
-   from pyecharts_javascripthon.datatypes import Document  # for Document object
-   from pyecharts_javascripthon.datatypes import Date      # for Date object
+   from pyecharts_javascripthon.dom.objects import window    # for window object
+   from pyecharts_javascripthon.dom.objects import Document  # for Document object
+   from pyecharts_javascripthon.dom.objects import Date      # for Date object
 
 
 Credits
@@ -111,6 +111,15 @@ Dukpy: `Alessandro Molina <https://github.com/amol->`_ and `Sviatoslav Sydorenko
 Installation
 ================================================================================
 
+
+You can install pyecharts-javascripthon via pip:
+
+.. code-block:: bash
+
+    $ pip install pyecharts-javascripthon
+
+
+or clone it and install it:
 
 .. code-block:: bash
 
