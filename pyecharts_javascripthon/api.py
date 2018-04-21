@@ -91,14 +91,14 @@ class FunctionTranslator(object):
         return options_snippet
 
 
-_FUNCTION_TRANSLATOR = FunctionTranslator()
+FUNCTION_TRANSLATOR = FunctionTranslator()
 
 
 class DefaultJsonEncoder(json.JSONEncoder):
 
     def default(self, obj):
         if isinstance(obj, types.FunctionType):
-            return _FUNCTION_TRANSLATOR.feed(obj)
+            return FUNCTION_TRANSLATOR.feed(obj)
 
         if isinstance(obj, (datetime.datetime, datetime.date)):
             return obj.isoformat()
@@ -121,10 +121,9 @@ class EChartsTranslator(object):
         self.json_encoder = json_encoder
 
     def translate(self, options):
-        _FUNCTION_TRANSLATOR.reset()
         option_snippet = json.dumps(options, indent=4, cls=self.json_encoder)
-        function_snippet = _FUNCTION_TRANSLATOR.translate()
-        option_snippet = _FUNCTION_TRANSLATOR.handle_options(option_snippet)
+        function_snippet = FUNCTION_TRANSLATOR.translate()
+        option_snippet = FUNCTION_TRANSLATOR.handle_options(option_snippet)
         return JavascriptSnippet(function_snippet.as_snippet(), option_snippet)
 
 

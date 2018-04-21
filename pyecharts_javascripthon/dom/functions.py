@@ -1,0 +1,2 @@
+def alert(msg):
+    pass
