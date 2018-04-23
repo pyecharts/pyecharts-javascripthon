@@ -103,6 +103,9 @@ class DefaultJsonEncoder(json.JSONEncoder):
         if isinstance(obj, (datetime.datetime, datetime.date)):
             return obj.isoformat()
 
+        if hasattr(obj, 'config'):
+            return obj.config
+
         # Pandas and Numpy lists
         try:
             return obj.astype(float).tolist()

@@ -3,9 +3,9 @@ organisation: "pyecharts"
 author: "C.W."
 contact: "wangc_2011@hotmail.com"
 company: "pyecharts dev team"
-version: "0.0.2"
-current_version: "0.0.2"
-release: "0.0.2"
+version: "0.0.3"
+current_version: "0.0.3"
+release: "0.0.3"
 copyright_year: 2018
 license: MIT
 dependencies:
