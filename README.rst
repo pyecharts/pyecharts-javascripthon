@@ -126,7 +126,7 @@ Credits
 
 javascripthon: `Alberto Berti <https://github.com/azazel75>`_
 
-Dukpy: `Alessandro Molina <https://github.com/amol->`_ and `Sviatoslav Sydorenko <https://github.com/webknjaz`_
+Dukpy: `Alessandro Molina <https://github.com/amol->`_ and `Sviatoslav Sydorenko <https://github.com/webknjaz>`_
 
 
 .. _javascripthon: https://github.com/metapensiero/metapensiero.pj
