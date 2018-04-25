@@ -3,4 +3,4 @@ mock
 codecov
 coverage
 flake8
-https://github.com/pyecharts/pyecharts/archive/dev.zip
+https://github.com/pyecharts/pyecharts/archive/chart-click.zip

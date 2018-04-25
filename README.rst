@@ -85,8 +85,16 @@ Usage
 1. Only Python 3.5+ code can be transcompiled. If you use python 2.7 or 3.4, you are obliged
 to use generic Python codes so that python 2.7 and 3.4 interpreter do not complain.
 
-2. For browsers DOM object, please include some of these statements so as to 'blind' python interpreter:
+2. For browsers DOM object, please visit `pyecharts_javascripthon.dom`.
 
+
+API (Dummy objects)
+=====================
+
+The following are the dummy objects and functions to help you bypass python interpreter.
+
+DOM objects
+------------
 
 .. code-block:: python
 
@@ -95,12 +103,22 @@ to use generic Python codes so that python 2.7 and 3.4 interpreter do not compla
    from pyecharts_javascripthon.dom.objects import Date      # for Date object
 
 
+Global functions
+-------------------
+
+.. code-block:: python
+
+   from pyecharts_javascripthon.dom.functions import alert    # provide alert dialog to the user
+
+
+You are welcome to submit PRs to add more objects and functions.
+
 Credits
 =============
 
 javascripthon: `Alberto Berti <https://github.com/azazel75>`_
 
-Dukpy: `Alessandro Molina <https://github.com/amol->`_ and `Sviatoslav Sydorenko <https://github.com/webknjaz`
+Dukpy: `Alessandro Molina <https://github.com/amol->`_ and `Sviatoslav Sydorenko <https://github.com/webknjaz`_
 
 
 .. _javascripthon: https://github.com/metapensiero/metapensiero.pj
