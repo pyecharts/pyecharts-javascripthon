@@ -11,3 +11,19 @@ class Document:
 
 class window:
     pass
+
+
+class Math:
+    pass
+
+
+class JSON:
+    pass
+
+
+class console:
+    pass
+
+
+class screen:
+    pass
