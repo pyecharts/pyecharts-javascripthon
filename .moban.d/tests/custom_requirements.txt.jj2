@@ -1,5 +1,5 @@
 {% extends "tests/requirements.txt.jj2" %}
 
 {%block extras %}
-https://github.com/pyecharts/pyecharts/archive/chart-click.zip
+https://github.com/pyecharts/pyecharts/archive/dev.zip
 {%endblock%}
