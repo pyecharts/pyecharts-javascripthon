@@ -8,8 +8,6 @@ pyecharts-javascripthon
 .. image:: https://codecov.io/gh/pyecharts/pyecharts-javascripthon/branch/master/graph/badge.svg
    :target: https://codecov.io/gh/pyecharts/pyecharts-javascripthon
 
-.. image:: https://readthedocs.org/projects/pyecharts-javascripthon/badge/?version=latest
-   :target: http://pyecharts-javascripthon.readthedocs.org/en/latest/
 
 
 Introduction

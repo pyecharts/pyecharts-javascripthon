@@ -30,9 +30,7 @@ def test_basic_usage():
 
 def test_datetime():
     a_date_time = datetime.datetime(2018, 4, 20, 19, 2, 30)
-    option = {
-        'datetime': a_date_time
-    }
+    option = {'datetime': a_date_time}
     expected = """
     {
         "datetime": "2018-04-20T19:02:30"
@@ -45,9 +43,7 @@ def test_datetime():
 
 def test_date():
     a_date = datetime.date(2018, 4, 20)
-    option = {
-        'date': a_date
-    }
+    option = {'date': a_date}
     expected = """
     {
         "date": "2018-04-20"
