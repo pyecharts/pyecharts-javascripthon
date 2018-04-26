@@ -3,12 +3,12 @@ import json
 import inspect
 import requests
 
-ENV_KEY_HOST = "SCRIPTHON_HOST"
+ENV_KEY_API_ENDPOINT = "SCRIPTHON_API_ENDPOINT"
 ENV_KEY_API_TOKEN = "SCRIPTHON_API_TOKEN"
 
-DEFAULT_HOST = '47.254.144.94'
+
 DEFAULT_API_KEY = 'pyecharts-0-5-0-rocks'
-DEFAULT_API_ENDPOINT = 'http://{0}/translate'
+DEFAULT_API_EP = 'https://infinite-headland-27281.herokuapp.com/translate'
 
 
 class Python2Javascript:
@@ -16,14 +16,13 @@ class Python2Javascript:
     @staticmethod
     def translate(obj):
         source_lines, _ = inspect.getsourcelines(obj)
-        host_name = get_host_name()
-        host = DEFAULT_API_ENDPOINT.format(host_name)
+        endpoint = get_api_endpoint()
         api_token = get_api_token()
         headers = {
             "Content-Type": "application/json", "Authorization": api_token
         }
         r = requests.post(
-            host,
+            endpoint,
             headers=headers,
             data=json.dumps({"source": ''.join(source_lines)}),
         )
@@ -35,11 +34,11 @@ class Python2Javascript:
             raise IOError("Cannot connect to the online compiler")
 
 
-def get_host_name():
-    host = os.environ.get(ENV_KEY_HOST)
-    if host is None:
-        host = DEFAULT_HOST
-    return host
+def get_api_endpoint():
+    endpoint = os.environ.get(ENV_KEY_API_ENDPOINT)
+    if endpoint is None:
+        endpoint = DEFAULT_API_EP
+    return endpoint
 
 
 def get_api_token():

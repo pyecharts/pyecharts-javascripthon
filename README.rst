@@ -60,7 +60,7 @@ for unix alike systems:
 
 .. code-block:: shell
 
-   export SCRIPTHON_HOST=new_ip_address_or_domain_name
+   export SCRIPTHON_ENDPOINT=http://new_ip_address_or_domain_name/translate
    export SCRIPTION_API_TOKEN=new_api_key
 
 
@@ -68,7 +68,7 @@ for windows systems:
 
 .. code-block:: shell
 
-   set SCRIPTHON_HOST=new_ip_address_or_domain_name
+   set SCRIPTHON_ENDPOINT=http://new_ip_address_or_domain_name/translate
    set SCRIPTION_API_TOKEN=new_api_key
 
 
