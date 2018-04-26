@@ -97,9 +97,9 @@ DOM objects
 
 .. code-block:: python
 
-   from pyecharts_javascripthon.dom.objects import window    # for window object
-   from pyecharts_javascripthon.dom.objects import Document  # for Document object
-   from pyecharts_javascripthon.dom.objects import Date      # for Date object
+   from pyecharts_javascripthon.dom import window    # for window object
+   from pyecharts_javascripthon.dom import Document  # for Document object
+   from pyecharts_javascripthon.dom import Date      # for Date object
 
 
 Global functions
@@ -107,7 +107,7 @@ Global functions
 
 .. code-block:: python
 
-   from pyecharts_javascripthon.dom.functions import alert    # provide alert dialog to the user
+   from pyecharts_javascripthon.dom import alert    # provide alert dialog to the user
 
 
 You are welcome to submit PRs to add more objects and functions.
