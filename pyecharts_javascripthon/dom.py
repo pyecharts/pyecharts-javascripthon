@@ -1,4 +1,4 @@
-# Dummy functions to make python compiler blind
+# Dummy functions, classes to make python compiler blind
 
 
 def Date(*_):
@@ -26,4 +26,8 @@ class console:
 
 
 class screen:
+    pass
+
+
+def alert(msg):
     pass
