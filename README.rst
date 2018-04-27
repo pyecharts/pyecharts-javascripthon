@@ -94,11 +94,11 @@ The following are the dummy objects and functions to help you bypass python inte
 DOM objects
 ------------
 
+`window <https://www.w3schools.com/jsref/obj_window.asp>`_,
+`Document <https://www.w3schools.com/jsref/dom_obj_document.asp>`_,
 `Date <https://www.w3schools.com/jsref/jsref_obj_date.asp>`_,
 `Math <https://www.w3schools.com/jsref/jsref_obj_math.asp>`_,
 `JSON <https://www.w3schools.com/jsref/jsref_obj_json.asp>`_,
-`window <https://www.w3schools.com/jsref/obj_window.asp>`_,
-`Document <https://www.w3schools.com/jsref/dom_obj_document.asp>`_,
 `console <https://www.w3schools.com/jsref/obj_console.asp>`_,
 `screen <https://www.w3schools.com/jsref/obj_screen.asp>`_
 
@@ -107,7 +107,11 @@ DOM objects
    from pyecharts_javascripthon.dom import window    # for window object
    from pyecharts_javascripthon.dom import Document  # for Document object
    from pyecharts_javascripthon.dom import Date      # for Date object
-
+   from pyecharts_javascripthon.dom import Math      # for Math module
+   from pyecharts_javascripthon.dom import JSON      # for JSON module
+   from pyecharts_javascripthon.dom import screen    # for screen object
+   from pyecharts_javascripthon.dom import console   # for console object
+   
 
 Global functions
 -------------------
