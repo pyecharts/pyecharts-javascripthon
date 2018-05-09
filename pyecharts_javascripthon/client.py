@@ -23,6 +23,7 @@ class Python2Javascript:
         }
         r = requests.post(
             endpoint,
+            verify=False,
             headers=headers,
             data=json.dumps({"source": ''.join(source_lines)}),
         )
